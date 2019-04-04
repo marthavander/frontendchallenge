@@ -10,88 +10,76 @@
   <body>
     <section>
       <nav>
-        <div class="navbar">
-          <div><img class="status" src="images/status-bar.png" alt="Status Bar" /></div>
-          <ul>
-            <li class="arrow-left">
-            <i class="fa fa-chevron-left fa-inverse fa-2x" aria-hidden="true"></i>
-            </li>
-            <li class="stop">Washington/State</li>
-            <li class="clock"><img src="images/clock.png" /></li>
-          </ul>
-          <div class="search">
-            <div class="searchbox">
-              <div class="magnify"><img src="images/search.png" /></div>
-              <p class="searchroute">Search route...</p>
-            </div>
-          </div>
-        </nav>
-      </section>
-      <section>
-        <div class="map"><img src="images/map.jpg" /></div>
-      </section>
-      <section>
-        <div class="direction">
-          <div class="direction-text">EASTBOUND</div>
+        <img class="status" src="images/status-bar.png" alt="Status Bar" />
+        <ul>
+          <li class="arrow-left">
+          <i class="fa fa-chevron-left fa-inverse fa-2x" aria-hidden="true"></i>
+          </li>
+          <li class="stop">Washington/State</li>
+          <li class="clock"><img src="images/clock.png" /></li>
+        </ul>
+        <div class="search">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search..." />
+          <span class="fa fa-search"></span>
+        </form>
         </div>
-        <div class="businfo">
-          <div class="line">60</div>
-          <div class="destination">Randolph/Harbor Dr</div>
-          <div class="frequency">DUE</div>
-        </div>
-        <div class="businfo">
-          <div class="line">124</div>
-          <div class="destination">Navy Pier</div>
-          <div class="frequency">9<br /><span class="min">min</div>
-        </div>
-        <div class="direction">
-          <div class="direction-text">NORTHBOUND</div>
-        </div>
-        <div class="businfo">
-          <div class="line">151</div>
-          <div class="destination">Devon/Clark</div>
-          <div class="frequency">7<br /><span class="min">min</div>
-        </div>
-        <div class="direction">
-          <div class="direction-text">SOUTHBOUND</div>
-        </div>
-        <div class="businfo">
-          <div class="line">J14</div>
-          <div class="destination">103rd/Stony Island</div>
-          <div class="frequency">4<br /><span class="min">min</div>
-        </div>
-        <div class="businfo">
-          <div class="line">124</div>
-          <div class="destination">Navy Pier</div>
-          <div class="frequency">9<br /><span class="min">min</div>
-        </div>
-        <div class="direction">
-          <div class="direction-text">REROUTE</div>
-        </div>
-        <div class="businfo">
-          <div class="line">6x</div>
-          <div class="destination">Jackson Park Express</div>
-          <div class="frequency">N/A</div>
-        </div>
-        <div class="direction">
-          <div class="direction-text">OUT OF SERVICE</div>
-        </div>
-        <div class="businfo">
-          <div class="line">4</div>
-          <div class="destination">Cottage Grove</div>
-          <div class="frequency">12:10<br /><span class="min">am</div>
-        </div>
-        <div class="businfo">
-          <div class="line">20</div>
-          <div class="destination">Madison</div>
-          <div class="frequency">12:10<br /><span class="min">am</div>
-        </div>
-        <div class="businfo">
-          <div class="line">157</div>
-          <div class="destination">Streeterville/Taylor</div>
-          <div class="frequency">6:00<br /><span class="min">am</div>
-        </div>
-
+      </nav>
+    </section>
+    <section>
+      <img class="map" src="images/map.jpg" />
+    </section>
+    <section>
+      <h1>EASTBOUND</h1>
+        <ul class="businfo">
+          <li class="line">60</li>
+          <li class="destination">Randolph/Harbor Dr<br /><span class="recur">Every 20 minutes</li>
+          <li class="frequency">DUE</li>
+        </ul>
+        <ul class="businfo">
+          <li class="line">124</li>
+          <li class="destination">Navy Pier<br /><span class="recur">Every 10 minutes</li>
+          <li class="frequency">9 <span class="min">min</li>
+        </ul>
+        <h1>NORTHBOUND</h1>
+        <ul class="businfo">
+          <li class="line">151</liv>
+          <li class="destination">Devon/Clark<br /><span class="recur">Every 16 minutes</li>
+          <li class="frequency">7 <span class="min">min</li>
+        </ul>
+        <h1>SOUTHBOUND</h1>
+        <ul class="businfo">
+          <li class="line">J14</li>
+          <li class="destination">103rd/Stony Island<br /><span class="recur">Every 15 minutes</li>
+          <li class="frequency">4 <span class="min">min</li>
+        </ul>
+        <ul class="businfo">
+          <li class="line">124</li>
+          <li class="destination">Navy Pier<br /><span class="recur">Every 10 minutes</li>
+          <li class="frequency">9 <span class="min">min</li>
+        </ul>
+        <h1>REROUTE</h1>
+        <ul class="businfo">
+          <li class="line">6x</li>
+          <li class="destination">Jackson Park Express<br /><span class="recur">Frequency is unavailable</li>
+          <li class="frequency">N/A</li>
+        </ul>
+        <h1>OUT OF SERVICE</h1>
+        <ul class="businfo">
+          <li class="line">4</li>
+          <li class="destination">Cottage Grove<br /><span class="recur">Resumes at 12:10 am</li>
+          <li class="frequency">12:10 <span class="min">am</li>
+        </ul>
+        <ul class="businfo">
+          <li class="line">20</li>
+          <li class="destination">Madison<br /><span class="recur">Resumes at 12:10 am</li>
+          <li class="frequency">12:10 <span class="min">am</li>
+        </ul>
+        <ul class="businfo">
+          <li class="line">157</li>
+          <li class="destination">Streeterville/Taylor<br /><span class="recur">Resumes at 6:00 am</li>
+          <li class="frequency">6:00 <span class="min">am</li>
+        </ul>
     </section>
   </body>
 </html>
